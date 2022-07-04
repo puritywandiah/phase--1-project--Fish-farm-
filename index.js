@@ -1,5 +1,9 @@
-document.querySelector("#www-widgetapi-script")
-document.querySelector("html > script:nth-child(2)")
-document.querySelector("html > script:nth-child(3)")
-document.querySelector("html > script:nth-child(4)")
+function fetchFish(){
+    let URL ='https://www.fishwatch.gov/api/species'
+    fetch(URL)
+    .then(res=> res.json())
+    .then(data=>console.log(data))
+}
+
+fetchFish()
 
